@@ -18,7 +18,7 @@ env:
   REPO_BRANCH: 21.02
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: d1.config
-
+  TZ: Asia/Shanghai
 jobs:
   build:
     runs-on: ubuntu-20.04
