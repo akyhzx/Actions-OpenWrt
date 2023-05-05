@@ -76,8 +76,9 @@ jobs:
     - name: Compile the firmware
       id: yasuo
       run: |
-        tar -jcvf openwrt.tar.bz2 openwrt
         mkdir mydownload
+        ls -all
+        tar -jcvf openwrt.tar.bz2 /workdir/openwrt
         mv openwrt.tar.bz2 mydownload/
 
     - name: Check space usage
