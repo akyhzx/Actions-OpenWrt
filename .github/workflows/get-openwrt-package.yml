@@ -77,7 +77,7 @@ jobs:
       id: yasuo
       run: |
         tar -jcvf openwrt.tar.bz2 openwrt
-        make mydownload
+        mkdir mydownload
         mv openwrt.tar.bz2 mydownload/
 
     - name: Check space usage
